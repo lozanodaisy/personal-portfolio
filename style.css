@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #0B0B0F;
+    color: #F5F7FA;
+}
+
+header {
+    background-color: #0F172A;
+    text-align: center;
+    padding: 40px 20px 25px;
+    border-bottom: 1px solid #C9CCD6;
+}
+
+header h1 {
+    color: #C9CCD6;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+header p {
+    color: #C9CCD6;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #F5F7FA;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD369;
+    border-color: #FFD369;
+    transform: translateY(-2px);
+}
+
+nav a:focus-visible,
+a:focus-visible {
+    outline: 3px solid #FFD369;
+    outline-offset: 3px;
+}
+
+main {
+    width: min(90%, 1100px);
+    margin: auto;
+    padding: 50px 0;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 35px;
+    background-color: #0F172A;
+    border: 1px solid #C9CCD6;
+    border-radius: 18px;
+}
+
+section h2 {
+    color: #FFD369;
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #F5F7FA;
+    max-width: 750px;
+    margin: auto;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    color: #C9CCD6;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#skills li {
+    background-color: #0B0B0F;
+    color: #FFD369;
+    border: 1px solid #FFD369;
+    border-radius: 12px;
+    padding: 12px 25px;
+    min-width: 130px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgbae(255, 211, 105, 0.3);
+}
+
+#projects {
+    background-color: #0F172A;
+    border: none;
+}
+
+#projects article {
+    background-color: #0F172A;
+    border: 2px solid #FFD369;
+    border-radius: 18px;
+    padding: 25px;
+    max-width: 700px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.25), 0 0 40px rgba(255, 211, 105, 0.15);
+}
+
+#projects h3 {
+    color: #FFD369;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#projects article p {
+    color: #C9CCD6;
+}
+
+#contact {
+    text-align: center;
+    border-top: 1px solid #C9CCD6;
+}
+
+#contact p {
+    color: #C9CCD6;
+    margin-bottom: 15px;
+}
+
+#contact ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#contact li {
+    margin: 10px 0;
+    color: #C9CCD6;
+}
+
+#contact a {
+    color: #FFD369;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#contact a:hover {
+    color: #F5F7FA;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0F172A;
+    color: #C9CCD6;
+    border-top: 1px solid #C9CCD6;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 200px;
+    }
+
+    main {
+        width: 92%;
+        padding: 30px 0;
+    }
+
+    section {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills li {
+        width: 80%;
+    }
+
+    #projects article {
+        width: 100%;
+    }
+}
